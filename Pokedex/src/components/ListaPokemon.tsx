@@ -19,7 +19,7 @@ const ListaPokemon = ()=>{
             // tamanho / habilidade / genero 
         };
         fetchPokemon();
-    })
+    });
 
 
     <View>
