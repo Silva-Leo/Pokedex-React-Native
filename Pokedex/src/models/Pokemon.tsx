@@ -5,7 +5,7 @@ export default class Pokemon{
     name:string;
     image?:string;
     height?:number;
-    weigth?:number;
+    weight?:number;
     type?:string;
     move?:string;
     stats?:Stats;
@@ -15,7 +15,7 @@ export default class Pokemon{
         name:string,
         image?:string,
         height?:number,
-        weigth?:number,
+        weight?:number,
         type?:string,
         move?:string,
         stats?:Stats
@@ -24,7 +24,7 @@ export default class Pokemon{
         this.name=name;
         this.image=image;
         this.height=height;
-        this.weigth=weigth;
+        this.weight=weight;
         this.type=type;
         this.move=move;
         this.stats=stats;

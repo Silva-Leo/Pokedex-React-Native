@@ -9,7 +9,7 @@ const initialState: Pokemon = {
     name:'',
     image:'',
     height:0,
-    weigth:0,
+    weight:0,
     type:'',
     move:'',
     stats:{
