@@ -2,23 +2,21 @@ import React from 'react';
 
 import Login from './pages/Login/index';
 
-import {Text, View, SafeAreaView, useColorScheme} from 'react-native';
+import {Text, View,  useColorScheme} from 'react-native';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import ListaPokemon from './components/ListaPokemon';
+import { Provider } from 'react-redux';
+import {store} from  './app/store'
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView>
+    <Provider store={store}>
       <View>
-        <Text>hvjkvhv</Text>
+          <ListaPokemon/>
       </View>
-    </SafeAreaView>
+    </Provider>
   );
 };
 
