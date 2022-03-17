@@ -9,6 +9,7 @@ export default class Pokemon{
     type?:string;
     move?:string;
     stats?:Stats;
+    color?: string;
 
     constructor(
         id:number,
@@ -18,7 +19,8 @@ export default class Pokemon{
         weight?:number,
         type?:string,
         move?:string,
-        stats?:Stats
+        stats?:Stats,
+        color?: string,
      ) {
         this.id=id;
         this.name=name;
@@ -28,6 +30,7 @@ export default class Pokemon{
         this.type=type;
         this.move=move;
         this.stats=stats;
+        this.color = color;
         }
 }
 export class Stats{
