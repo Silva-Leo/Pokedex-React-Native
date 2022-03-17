@@ -1,5 +1,3 @@
-/* eslint-disable eol-last */
-/* eslint-disable prettier/prettier */
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from './store';
 
