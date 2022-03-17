@@ -2,9 +2,11 @@ import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 // Essa feature do projeto administra o número do Pokemon da API, que ao total tem 898. Então impede que valor seja maior que 898 ou menor que 1. 
 
+
 interface NumeroPokemon {
   value: number;
 }
+
 
 const initialState: NumeroPokemon = {
   value: 1,

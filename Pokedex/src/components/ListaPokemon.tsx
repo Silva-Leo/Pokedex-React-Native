@@ -7,7 +7,8 @@ import { Text,
     TouchableOpacity,
     useColorScheme,
     SafeAreaView,
-    StatusBar, } from 'react-native';
+    StatusBar,
+    StyleSheet, } from 'react-native';
 
 import { PokemonClient }from 'pokenode-ts';
 
@@ -136,7 +137,7 @@ const PokemonList = () => {
         />
         <View style={styles.whiteSheet} />
         <SafeAreaView>
-          {/* name and number */}
+
           <View style={styles.row}>
             <Text style={styles.pokemonName}>
               {currentPokemon.name.charAt(0).toUpperCase() +
