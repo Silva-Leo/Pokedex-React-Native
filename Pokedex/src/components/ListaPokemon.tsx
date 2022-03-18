@@ -3,9 +3,7 @@ import React, {useEffect, useState} from 'react';
 import { Text,
      View,
     Image,
-    Button,
     TouchableOpacity,
-    useColorScheme,
     SafeAreaView,
     StatusBar,
     StyleSheet, } from 'react-native';
@@ -19,7 +17,7 @@ import { setPokemon } from '../features/pokemon/pokemonSlice';
 import { increment, decrement, incrementByAmount, decrementByAmount } from '../features/numeroPokemon/numeroDoPokemon';
 
 import Pokemon, {Stats} from '../models/Pokemon';
-import {Colors} from '../cores';
+import {Colors} from '../styles/cores';
 
 const PokemonList = () => {
     const dispatch = useAppDispatch();
