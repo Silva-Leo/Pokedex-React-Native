@@ -131,7 +131,7 @@ const PokemonList = () => {
         <StatusBar barStyle={'light-content'} />
         <Image
           style={styles.pokeball}
-          source={require('../images/Pokeball.png')}
+          source={require('../img/Pokeball.png')}
         />
         <View style={styles.whiteSheet} />
         <SafeAreaView>
