@@ -1,20 +1,31 @@
 import React from 'react';
-import {View, Text, Button, TextInput} from 'react-native';
-
+import { useState } from 'react';
+import {Text} from 'react-native';
 import {Container} from './style';
+import { Input } from '../../components/TextInput';
+import  { MyButton } from '../../components/Button';
+import { useNavigation } from '@react-navigation/native';
+
 
 const Login = () => {
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const navigation = useNavigation();
+
   return (
+
     <Container>
-      <View
-        style={{
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flex: 1,
-        }}>
         <Text style={{fontSize: 20}}>Login</Text>
-      </View>
+        <Input placeholder='Escreva seu e-mail..'
+        value={email}
+        onChangeText={setEmail} />
+        <Input placeholder='Escreva sua senha'
+        secureTextEntry
+        value={senha}
+        onChangeText={setSenha}/>
+
+        <MyButton onPress={()=> navigation.navigate('Home')}
+        title='Entrar no APP'/>
     </Container>
   );
 };
