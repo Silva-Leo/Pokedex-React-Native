@@ -149,7 +149,6 @@ const PokemonList = () => {
               #{currentPokemon.id}
             </Text>
           </View>
-          {/* Image and buttons */}
           <View style={[styles.row, {height: 250}]}>
             <View>
               <TouchableOpacity style={styles.button} onPress={handlePrevButton}>
@@ -176,7 +175,6 @@ const PokemonList = () => {
               </TouchableOpacity>
             </View>
           </View>
-          {/* Pokemon type */}
           <View
             style={[
               styles.pokemonTypeContainer,
@@ -193,7 +191,7 @@ const PokemonList = () => {
               {currentPokemon.type}
             </Text>
           </View>
-          {/* Pokemon About */}
+
           <View>
             <Text
               style={{
@@ -203,7 +201,7 @@ const PokemonList = () => {
                 marginTop: 20,
                 color: currentPokemon.color,
               }}>
-              About
+              Sobre
             </Text>
             <View style={[styles.row, {justifyContent: 'center', marginTop: 20}]}>
               <View style={{alignItems: 'center', marginHorizontal: 10}}>
@@ -223,7 +221,7 @@ const PokemonList = () => {
                 </Text>
                 <Text
                   style={{color: Colors.mediumGray, fontSize: 12, marginTop: 10}}>
-                  Weight
+                  Peso
                 </Text>
               </View>
               <View style={{alignItems: 'center', marginHorizontal: 10}}>
@@ -243,19 +241,18 @@ const PokemonList = () => {
                 </Text>
                 <Text
                   style={{color: Colors.mediumGray, fontSize: 12, marginTop: 10}}>
-                  Height
+                  Altura
                 </Text>
               </View>
               <View style={{alignItems: 'center', marginHorizontal: 10}}>
                 <Text>{currentPokemon.move}</Text>
                 <Text
                   style={{color: Colors.mediumGray, fontSize: 12, marginTop: 10}}>
-                  Move
+                  Golpe
                 </Text>
               </View>
             </View>
           </View>
-          {/* Pokemon Abilities */}
           <View>
             <Text
               style={{
@@ -265,7 +262,7 @@ const PokemonList = () => {
                 marginTop: 20,
                 color: currentPokemon.color,
               }}>
-              Base Stats
+              Estatísticas
             </Text>
             <View
               style={[
