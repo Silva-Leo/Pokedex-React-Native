@@ -16,9 +16,6 @@ const Counter = () => {
     const count = useAppSelector(state => state.counter.value);
     const dispatch = useAppDispatch();
 
-
-
-
     const CounterText = styled.Text<Props>`
         font-size: 50px;
         font-weight: bold;
