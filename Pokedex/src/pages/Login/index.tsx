@@ -7,6 +7,7 @@ import  { MyButton } from '../../components/Button';
 import { useNavigation } from '@react-navigation/native';
 
 
+
 const Login = () => {
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
@@ -15,7 +16,7 @@ const Login = () => {
   return (
 
     <Container>
-        <Text style={{fontSize: 20}}>Login</Text>
+      <Text style={{fontSize: 20}}>Faça seu login</Text>
         <Input placeholder='Escreva seu e-mail..'
         value={email}
         onChangeText={setEmail} />
